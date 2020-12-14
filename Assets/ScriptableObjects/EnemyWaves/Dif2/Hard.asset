@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e30df6d7a8f6944a247f2dcbd9a12f, type: 3}
+  m_Name: Hard
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 8044331093420249095, guid: 557fbb3a051ef564cb93b0f9916f8fb5, type: 3}
+  - {fileID: 8288657633751488389, guid: 671c43000e4c016479aeecfefe2bf8a3, type: 3}
+  - {fileID: 8519310558927684086, guid: 7972d68903d09454ba3c3c99b2c2d201, type: 3}
+  - {fileID: 8610663698423170445, guid: ede8484af120c3c41904370c2ddb1d3d, type: 3}
+  - {fileID: 4564954633608486914, guid: 8d6f882612abc034a825a4b0c9172498, type: 3}
+  - {fileID: 7329332539009154498, guid: 1a9562767445a574d80f7e4778ea38fb, type: 3}
+  - {fileID: 8589476518975218989, guid: ef7149173aaaa6845ab5e02f8f759a86, type: 3}
+  - {fileID: 52186357042523514, guid: 673feadcdfef544468ff16369b2eb1a5, type: 3}
+  amounts: 0300000001000000030000000100000003000000010000000000000001000000
+  inOrder: 0
+  minTime: 1
+  maxTime: 2
+  difficultyLevel: 2

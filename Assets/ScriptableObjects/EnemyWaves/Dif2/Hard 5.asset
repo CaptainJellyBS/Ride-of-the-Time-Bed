@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e30df6d7a8f6944a247f2dcbd9a12f, type: 3}
+  m_Name: Hard 5
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 7878419745996302706, guid: 8be551b6943257749a2edeea1899a109, type: 3}
+  amounts: 01000000
+  inOrder: 0
+  minTime: 1
+  maxTime: 2
+  difficultyLevel: 2
