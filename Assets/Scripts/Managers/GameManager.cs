@@ -159,19 +159,19 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    public void CameraShake(float time)
+    public void CameraShake(float time, float intensity = 0.15f)
     {
-        StartCoroutine(CameraShakeC(time));
+        StartCoroutine(CameraShakeC(time, intensity));
     }
 
-    IEnumerator CameraShakeC(float time)
+    IEnumerator CameraShakeC(float time, float intensity)
     {
         float t = time;
         Vector3 orig = Camera.main.transform.position;
         while (t > 0.0f)
         {
             t -= Time.deltaTime;
-            Vector3 shakeVector = new Vector3(Random.Range(-0.15f, 0.15f), 0, Random.Range(-0.15f, 0.15f));
+            Vector3 shakeVector = new Vector3(Random.Range(-intensity, intensity), 0, Random.Range(-intensity, intensity));
             Camera.main.transform.position += shakeVector;
             yield return null;
             Camera.main.transform.position -= shakeVector;

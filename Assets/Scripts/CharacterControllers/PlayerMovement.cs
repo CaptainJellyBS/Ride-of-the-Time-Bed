@@ -197,7 +197,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isImmune)
         {
-            GameManager.Instance.CameraShake(0.5f);
+            GameManager.Instance.CameraShake(0.5f, 0.75f);
             playerAudio.timeDrainedSound.Play();
             GameManager.Instance.CurrentTimePoints -= damage;
         }

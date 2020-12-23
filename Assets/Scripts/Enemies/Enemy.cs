@@ -44,10 +44,14 @@ public abstract class Enemy : MonoBehaviour
     protected virtual void Die()
     {
         GameManager.Instance.Score += (int)(points * PickupManager.Instance.scoreMultiplier);
-
-        if (spawnsPickup && Random.Range(0.000f, 1.000f) <= PickupManager.Instance.pickupChance) 
+        if (spawnsPickup)
         {
-            PickupManager.Instance.SpawnPickup(transform.position);
+            GameManager.Instance.CameraShake(0.2f, 0.075f);
+
+            if (Random.Range(0.000f, 1.000f) <= PickupManager.Instance.pickupChance)
+            {
+                PickupManager.Instance.SpawnPickup(transform.position);
+            }
         }
         Destroy(gameObject);
     }

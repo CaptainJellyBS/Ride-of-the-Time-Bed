@@ -3657,7 +3657,7 @@ MonoBehaviour:
   fireRateDuration: 5
   timeRestoreDuration: 5
   scoreBonusDuration: 5
-  fireRateBonus: 2
+  fireRateBonus: 3
   timeRestoreBonus: 0.1
 --- !u!1 &983324096
 GameObject:
